@@ -1,6 +1,11 @@
 # PhonePe Pulse Data Visualization 2018-2022
 This project is a data visualization tool for PhonePe's pulse data from 2018 to 2022. It allows users to explore and analyze various metrics related to PhonePe's business performance.
 
+
+![Home page](https://user-images.githubusercontent.com/68391060/236874799-052e1efd-0c9b-4352-826c-03215cb57202.png)
+
+
+
 ## Installation
 Clone the repository to your local machine using git clone https://github.com/yourusername/phonepe-pulse-visualization.git
 Install the required Python packages by running pip install -r requirements.txt
@@ -17,3 +22,4 @@ Explore the data using the interactive charts provided by Plotly Express.
 ### MySQL: For storing and retrieving data.
 ### Streamlit: For building the user interface and deploying the application.
 ### Plotly Express: For data visualization.
+

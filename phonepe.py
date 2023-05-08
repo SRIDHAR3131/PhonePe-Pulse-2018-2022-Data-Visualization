@@ -91,33 +91,8 @@ if main=='Home':
                 " It is available as an open-source project on GitHub.")
     st.markdown("Click on the ****:red[Visualization]**** option in the sidebar to start exploring the PhonePe Pulse data.")
     st.write("[Learn more](https://www.phonepe.com/pulse/explore/transaction/2022/4/)")
-
     st.exception(ValueError("Transaction and User values(₹) in Crores and Lakhs respectively"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#visualization
 else:
  # navigation menu
     with st.sidebar:

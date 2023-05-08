@@ -5,9 +5,12 @@ Creating home page for better understanding to visualize the data
 
 ![home page](https://user-images.githubusercontent.com/68391060/236889933-5fca5959-02d0-4c30-a31d-b5492044a241.png)
 
-## Installation
+## Installation and cloning
 Clone the repository to your local machine using git clone https://github.com/PhonePe/pulse.git
 Install the required Python packages by running pip install -r requirements.txt
+
+## MySQL Database
+After cloning the data will be uploaded to database through pymysql and create engine in Sqlalchemy for database connection.
 
 ## Usage
 Run python phonepe.py to start the application.

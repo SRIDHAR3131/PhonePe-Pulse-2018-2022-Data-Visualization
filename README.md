@@ -7,7 +7,7 @@ Creating home page for better understanding to visualize the data
 
 Transaction Analysis
 
-![Screenshot 2023-05-09 233451](https://github.com/SRIDHAR3131/PhonePe-Pulse-2018-2022-Data-Visualization/assets/68391060/28b27c62-f6c7-45fd-8de6-cc6c3b28a820)
+![Screenshot 2023-05-10 004541](https://github.com/SRIDHAR3131/PhonePe-Pulse-2018-2022-Data-Visualization/assets/68391060/0a7cbfc4-593b-4e38-ad9d-fd17e027349c)
 
 User Analysis
 

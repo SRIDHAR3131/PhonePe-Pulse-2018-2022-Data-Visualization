@@ -82,30 +82,6 @@ with st.sidebar:
 with st.sidebar:
     main = option_menu(None, ["Home", 'Visualization'],icons=['house', 'pin-map'], menu_icon="cast")
 
-    # url = requests.get(
-    #     "https://assets8.lottiefiles.com/packages/lf20_HRZjpxzqFY.json")
-    # url_json = dict()
-    # if url.status_code == 200:
-    #     url_json = url.json()
-    # else:
-    #     print("Error in URL")
-    #
-    # st_lottie(url_json,
-    #           # change the direction of our animation
-    #           reverse=True,
-    #           # height and width of animation
-    #           height=300,
-    #           width=500,
-    #           # speed of animation
-    #           speed=1,
-    #           # means the animation will run forever like a gif, and not as a still image
-    #           loop=True,
-    #           # quality of elements used in the animation, other values are "low" and "medium"
-    #           quality='high',
-    #           # THis is just to uniquely identify the animation
-    #           key='Car'
-    #           )
-
 if main=='Home':
 
     image = Image.open("phone.png")

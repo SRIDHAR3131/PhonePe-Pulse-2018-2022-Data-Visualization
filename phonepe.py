@@ -12,62 +12,55 @@ import plotly.graph_objects as go   #plotly graph object-data visualization
 import streamlit as st              #GUI
 from streamlit_option_menu import option_menu   #option menu
 from streamlit_lottie import st_lottie
-import requests
 
-# # SETTING-UP BACKGROUND IMAGE
-# def setting_bg():
-#     st.markdown(f""" <style>.stApp {{
-#                         background: url("https://cutewallpaper.org/22/plane-colour-background-wallpapers/189265759.jpg");
-#                         background-size: cover}}
-#                      </style>""",unsafe_allow_html=True)
-# setting_bg()
+
 
 #-------------------------------------------NUMBER CONVERSION IN LAKHS AND CRORES---------------------------------------
 #-------optional case--------
 
-def convert_to_crore2(number):
-    crore = number / 10000000
-    return round(crore,2)
+# def convert_to_crore2(number):
+#     crore = number / 10000000
+#     return round(crore,2)
 
-def convert_to_lakh2(number):
-    lakh = number / 100000
-    return round(lakh,2)
+# def convert_to_lakh2(number):
+#     lakh = number / 100000
+#     return round(lakh,2)
 
-def convert_to_thousand(number):
-    the = number / 1000
-    return round(the,2)
+# def convert_to_thousand(number):
+#     the = number / 1000
+#     return round(the,2)
 
-def number_convert(number): #number conversion str
-    formatted_number = "{:,}".format(number)
-    return formatted_number
+# def number_convert(number): #number conversion str
+#     formatted_number = "{:,}".format(number)
+#     return formatted_number
 
-def format_number(num):  #user str
-    if num >= 10000000:
-        return f"{num/10000000:.2f} Cr"
-    elif num >= 100000:
-        return f"{num/100000:.2f} L"
-    else:
-        return str(num)
-def format_number1(num): #transaction str
-    if num >= 10000000:
-        return f"₹{num/10000000:.2f} Cr"
-    elif num >= 100000:
-        return f"₹{num/100000:.2f} L"
-    else:
-        return str(num)
+# def format_number(num):  #user str
+#     if num >= 10000000:
+#         return f"{num/10000000:.2f} Cr"
+#     elif num >= 100000:
+#         return f"{num/100000:.2f} L"
+#     else:
+#         return str(num)
+# def format_number1(num): #transaction str
+#     if num >= 10000000:
+#         return f"₹{num/10000000:.2f} Cr"
+#     elif num >= 100000:
+#         return f"₹{num/100000:.2f} L"
+#     else:
+#         return str(num)
 
-def format_number2(num): #number int
-    if num >= 10000000:
-        return round(num,2)
-    elif num >= 100000:
-        return round(num,2)
-    else:
-        return round(num,2)
+# def format_number2(num): #number int
+#     if num >= 10000000:
+#         return round(num,2)
+#     elif num >= 100000:
+#         return round(num,2)
+#     else:
+#         return round(num,2)
 
-#percentage conversion varies
-def convert_to_per(number):
-    per = (number*100)/10
-    return f'{per:.2f} %'
+# #percentage conversion varies
+# def convert_to_per(number):
+#     per = (number*100)/10
+#     return f'{per:.2f} %'
 
 #--------------------------------PYTHON TO MYSQL DATABASE CONNECT AND UPLOAD DATAFRAME ---------------------------------
 
@@ -112,33 +105,8 @@ with st.sidebar:
 # sidebar with options for home and visualization
 with st.sidebar:
     main = option_menu(None, ["Home", 'Visualization'],icons=['house', 'pin-map'], menu_icon="cast")
-
-    # url = requests.get(
-    #     "https://assets8.lottiefiles.com/packages/lf20_HRZjpxzqFY.json")
-    # url_json = dict()
-    # if url.status_code == 200:
-    #     url_json = url.json()
-    # else:
-    #     print("Error in URL")
-    #
-    # st_lottie(url_json,
-    #           # change the direction of our animation
-    #           reverse=True,
-    #           # height and width of animation
-    #           height=300,
-    #           width=500,
-    #           # speed of animation
-    #           speed=1,
-    #           # means the animation will run forever like a gif, and not as a still image
-    #           loop=True,
-    #           # quality of elements used in the animation, other values are "low" and "medium"
-    #           quality='high',
-    #           # THis is just to uniquely identify the animation
-    #           key='Car'
-    #           )
-
+#===============================Home page====================================================================
 if main=='Home':
-
     image = Image.open("phone.png")
     st.sidebar.image(image, width=310)
 

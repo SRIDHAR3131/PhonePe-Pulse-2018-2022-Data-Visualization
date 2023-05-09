@@ -3,7 +3,16 @@ This project is a data visualization tool for PhonePe's pulse data from 2018 to 
 
 Creating home page for better understanding to visualize the data
 
-![home page](https://user-images.githubusercontent.com/68391060/236889933-5fca5959-02d0-4c30-a31d-b5492044a241.png)
+![Screenshot 2023-05-09 233352](https://github.com/SRIDHAR3131/PhonePe-Pulse-2018-2022-Data-Visualization/assets/68391060/be785406-8cba-4f39-acdc-dcaa1c45ee04)
+
+Transaction Analysis
+
+![Screenshot 2023-05-09 233451](https://github.com/SRIDHAR3131/PhonePe-Pulse-2018-2022-Data-Visualization/assets/68391060/28b27c62-f6c7-45fd-8de6-cc6c3b28a820)
+
+User Analysis
+
+![Screenshot 2023-05-09 233538](https://github.com/SRIDHAR3131/PhonePe-Pulse-2018-2022-Data-Visualization/assets/68391060/c049db6a-c41d-4b2a-ba17-80c1813379ea)
+
 
 ## Installation and cloning
 Clone the repository to your local machine using git clone https://github.com/PhonePe/pulse.git

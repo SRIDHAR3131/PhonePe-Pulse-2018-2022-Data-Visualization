@@ -14,13 +14,13 @@ from streamlit_option_menu import option_menu   #option menu
 from streamlit_lottie import st_lottie
 import requests
 
-# # SETTING-UP BACKGROUND IMAGE
-# def setting_bg():
+# # webapp bg_img setup
+# def bg_layout():
 #     st.markdown(f""" <style>.stApp {{
 #                         background: url("https://cutewallpaper.org/22/plane-colour-background-wallpapers/189265759.jpg");
 #                         background-size: cover}}
 #                      </style>""",unsafe_allow_html=True)
-# setting_bg()
+# bg_layout()
 
 #-------------------------------------------NUMBER CONVERSION IN LAKHS AND CRORES---------------------------------------
 #-------optional case--------
@@ -113,30 +113,7 @@ with st.sidebar:
 with st.sidebar:
     main = option_menu(None, ["Home", 'Visualization'],icons=['house', 'pin-map'], menu_icon="cast")
 
-    # url = requests.get(
-    #     "https://assets8.lottiefiles.com/packages/lf20_HRZjpxzqFY.json")
-    # url_json = dict()
-    # if url.status_code == 200:
-    #     url_json = url.json()
-    # else:
-    #     print("Error in URL")
-    #
-    # st_lottie(url_json,
-    #           # change the direction of our animation
-    #           reverse=True,
-    #           # height and width of animation
-    #           height=300,
-    #           width=500,
-    #           # speed of animation
-    #           speed=1,
-    #           # means the animation will run forever like a gif, and not as a still image
-    #           loop=True,
-    #           # quality of elements used in the animation, other values are "low" and "medium"
-    #           quality='high',
-    #           # THis is just to uniquely identify the animation
-    #           key='Car'
-    #           )
-
+#=======================================home page setup=================================================================
 if main=='Home':
 
     image = Image.open("phone.png")
@@ -165,7 +142,7 @@ if main== "Visualization":
             options=["Transaction","User"],    # "REGISTER USER","APP OPENED USER"
             icons=["bank", "person"],  # https://icons.getbootstrap.com/
         )
-
+#===================================side bar overall payment value===================================================================================
 
     #sidebar with drop down menu for accssing the features
     year_c,state_c=st.sidebar.columns([1.5,2])

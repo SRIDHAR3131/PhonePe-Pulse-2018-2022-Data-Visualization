@@ -13,13 +13,6 @@ import streamlit as st                #GUI
 from streamlit_option_menu import option_menu   #option menu
 import requests
 
-# # SETTING-UP BACKGROUND IMAGE
-# def setting_bg():
-#     st.markdown(f""" <style>.stApp {{
-#                         background: url("https://cutewallpaper.org/22/plane-colour-background-wallpapers/189265759.jpg");
-#                         background-size: cover}}
-#                      </style>""",unsafe_allow_html=True)
-# setting_bg()
 
 #-------------------------------------------NUMBER CONVERSION IN LAKHS AND CRORES---------------------------------------
 #-------optional case--------
@@ -111,31 +104,7 @@ with st.sidebar:
 # sidebar with options for home and visualization
 with st.sidebar:
     main = option_menu(None, ["Home", 'Visualization'],icons=['house', 'pin-map'], menu_icon="cast")
-
-    # url = requests.get(
-    #     "https://assets8.lottiefiles.com/packages/lf20_HRZjpxzqFY.json")
-    # url_json = dict()
-    # if url.status_code == 200:
-    #     url_json = url.json()
-    # else:
-    #     print("Error in URL")
-    #
-    # st_lottie(url_json,
-    #           # change the direction of our animation
-    #           reverse=True,
-    #           # height and width of animation
-    #           height=300,
-    #           width=500,
-    #           # speed of animation
-    #           speed=1,
-    #           # means the animation will run forever like a gif, and not as a still image
-    #           loop=True,
-    #           # quality of elements used in the animation, other values are "low" and "medium"
-    #           quality='high',
-    #           # THis is just to uniquely identify the animation
-    #           key='Car'
-    #           )
-
+#=====================================home page============================================================
 if main=='Home':
 
     image = Image.open("phone.png")

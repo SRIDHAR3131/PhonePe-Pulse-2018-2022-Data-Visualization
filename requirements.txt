@@ -1,7 +1,7 @@
-
 streamlit==1.21.0
 streamlit_option_menu==0.3.2
 SQLAlchemy==2.0.9
 pip==23.1.2
 PyMySQL==1.0.3
 PyMysqlDB==0.0.2
+plotly==5.13.1

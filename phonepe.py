@@ -63,7 +63,7 @@ def convert_to_per(number):
 
 #--------------------------------PYTHON TO MYSQL DATABASE CONNECT AND UPLOAD DATAFRAME ---------------------------------
 
-engine =create_engine("mysql+pymysql://root:Sridhar15@127.0.0.1/phonepe_pulse_data")
+engine =create_engine("mysql+pymysql://<uername>:<password>@127.0.0.1/phonepe_pulse_data")
 conn=engine.connect()
 
 #---------------------------------MYSQL TO PYTHON CONNECT AND READ THE QUERY--------------------------------------------
